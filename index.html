@@ -7,6 +7,7 @@
     <title>Roshan Renders</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="relative overflow-hidden bg-white">
@@ -26,7 +27,7 @@
                         <img alt="Your Company" class="h-8 w-auto sm:h-10" src="favicon.png">
                       </a>
                       <div class="-mr-2 flex items-center md:hidden">
-                        <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                        <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" onclick="w3_open()" aria-expanded="false">
                           <span class="sr-only">Open main menu</span>
                           <!-- Heroicon name: outline/bars-3 -->
                           <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -60,14 +61,15 @@
                   From: "opacity-100 scale-100"
                   To: "opacity-0 scale-95"
               -->
-              <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition hidden">
+              <!-- Mobile Nav -->
+              <div id="mobile_nav" class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition hidden">
                 <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
                   <div class="flex items-center justify-between px-5 pt-4">
                     <div>
                       <img class="h-8 w-auto" src="favicon.png" alt="">
                     </div>
                     <div class="-mr-2">
-                      <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" onclick="w3_close()">
                         <span class="sr-only">Close main menu</span>
                         <!-- Heroicon name: outline/x-mark -->
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
