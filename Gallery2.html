@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Roshan Renders </title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+  <style>
+    *:hover {
+      transition: 100ms ease-out;
+    }
+    :root {
+      --d: 700ms;
+      --e: cubic-bezier(0.19, 1, 0.22, 1);
+      --font-sans: "Rubik", sans-serif;
+      --font-serif: "Cardo", serif;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    main>div {
+      display: block;
+      margin-right: 1vw;
+    }
+
+    .page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 80px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url("C:/Roshan/Blender/GigTestScene.png");
+}
+.card:nth-child(2):before {
+  background-image: url("C:/Roshan/Blender/2/Animations/Live-time water/003.png");
+}
+.card:nth-child(3):before {
+  background-image: url("C:/Roshan/Blender/2/Objects/Tests/Coco'sWorld.png");
+}
+.card:nth-child(4):before {
+  background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+  filter: blur(100px);
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="relative overflow-hidden bg-white">
+    <div class="mx-auto max-w-7xl">
+
+        <div>
+          <div class="relative px-4 pt-6 sm:px-6 lg:px-8">
+            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+              <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
+                <div class="flex w-full items-center justify-between md:w-auto">
+                  <a href="#">
+                    <img class="h-8 w-auto sm:h-10" src="favicon.png">
+                  </a>
+                  <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button"
+                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      onclick="w3_open()" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <!-- Heroicon name: outline/bars-3 -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4" style="width:100%;">
+
+                <a href="#" class="font-medium text-indigo-600" style="transition: 100ms;">Home</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-700">Photography</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-700">Blender</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-700">Programming</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-700">Latest</a>
+                <!-- A collection of the latest things I made from all sub-headings -->
+              </div>
+            </nav>
+          </div>
+
+          <!--
+                Mobile menu, show/hide based on menu open state.
+      
+                Entering: "duration-150 ease-out"
+                  From: "opacity-0 scale-95"
+                  To: "opacity-100 scale-100"
+                Leaving: "duration-100 ease-in"
+                  From: "opacity-100 scale-100"
+                  To: "opacity-0 scale-95"
+              -->
+          <!-- Mobile Nav -->
+          <div id="mobile_nav" class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition hidden">
+            <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+              <div class="flex items-center justify-between px-5 pt-4">
+                <div>
+                  <img class="h-8 w-auto" src="favicon.png" alt="">
+                </div>
+                <div class="-mr-2">
+                  <button type="button"
+                    class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    onclick="w3_close()">
+                    <span class="sr-only">Close main menu</span>
+                    <!-- Heroicon name: outline/x-mark -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                      stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="space-y-1 px-2 pt-2 pb-3">
+                <a href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Product</a>
+
+                <a href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Features</a>
+
+                <a href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Marketplace</a>
+
+                <a href="#"
+                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Company</a>
+              </div>
+              <a href="#"
+                class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Latest
+                Things</a>
+            </div>
+          </div>
+        </div>
+        <main class="mt-8 px-8" id="page-content" style="align-items: center;width: 100%;">
+            <div class="card">
+                <div class="content">
+                  <h2 class="title">Items For Sale</h2>
+                  <p class="copy">A lighting demo</p>
+                  <button class="btn">14 • 03 • 2023</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Realtime Water</h2>
+                  <p class="copy">Experimenting with real time water simulations in Blender</p>
+                  <button class="btn">16 • 12 • 2021</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">My Minecraft World</h2>
+                  <p class="copy">Importing my Minecraft World into Blender<br>Making custom shaders</p>
+                  <button class="btn">19 • 05 • 2021</button>
+                </div>
+              </div>
+        </main>
+      </div>
+    </div>
+</body>
+
+</html>
