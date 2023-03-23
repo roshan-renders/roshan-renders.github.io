@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 
 *:hover {
     transition: 100ms ease-out;
@@ -91,15 +92,15 @@ main>div {
 }
 
 .card:nth-child(1):before {
-    background-image: url("ItemsForSale.png");
+    background-image: url("../Images/ItemsForSale.png");
 }
 
 .card:nth-child(2):before {
-    background-image: url("RealtimeWater.png");
+    background-image: url("../Images/RealtimeWater.png");
 }
 
 .card:nth-child(3):before {
-    background-image: url("MyMinecraftWorld.png");
+    background-image: url("../Images/MyMinecraftWorld.png");
 }
 
 .card:nth-child(4):before {
