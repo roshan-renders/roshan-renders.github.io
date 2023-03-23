@@ -15,7 +15,7 @@
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5vw;
     grid-row-gap: 1.5vw;
 }
@@ -41,23 +41,13 @@ main {
 }
 
 /* Responsifiying the Cards */
-@media screen and (max-width: 1165px) {
-    main {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .card {
-        height: 350px;
-    }
-}
-
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 915px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 810px) {
     main {
         grid-template-columns: repeat(1, 1fr);
     }
