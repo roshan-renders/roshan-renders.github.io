@@ -141,7 +141,7 @@ main {
     border: none;
 }
 
-@media (hover: hover) and (min-width: 600px) {
+@media (hover: hover) and (min-width: 0) {
     .card:after {
         transform: translateY(0);
     }
@@ -161,11 +161,13 @@ main {
         align-items: center;
     }
 
+    /*#Background Image#*/
     .card:hover:before,
     .card:focus-within:before {
         transform: translateY(-4%);
     }
 
+    /*#Gradient#*/
     .card:hover:after,
     .card:focus-within:after {
         transform: translateY(-50%);
