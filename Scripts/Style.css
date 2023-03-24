@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+#footer {
+    background-color: rgb(32, 32, 32);
+    color: azure;
+    font-family: 'Roboto Slab', serif;
+    padding: 3vw;
+}
+
+#footer>#credits {
+    font-size: larger;
+    margin-bottom: 2vw;
+    font-weight: 900;
+}
+
+#footer>#footertext {
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+#footertext>span {
+    font-weight: 900;
+    color: #b9b9b9;
+}
