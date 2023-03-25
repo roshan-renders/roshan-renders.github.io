@@ -10,7 +10,7 @@
 
 #footer>#credits {
     font-size: larger;
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     font-weight: 900;
 }
 
@@ -22,4 +22,11 @@
 #footertext>span {
     font-weight: 900;
     color: #b9b9b9;
+}
+
+#NameLogo {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #474747;
 }
