@@ -78,27 +78,27 @@ main {
 }
 
 .card:nth-child(1):before {
-    background-image: url("./Photography/1000079683-01.jpeg");
+    background-image: url("../Photography/1000079683-01.jpeg");
 }
 
 .card:nth-child(2):before {
-    background-image: url("./Photography/IMG_20240324_140613.jpg");
+    background-image: url("../Photography/IMG_20240324_140613.jpg");
 }
 
 .card:nth-child(3):before {
-    background-image: url("./Photography/IMG_20240324_142634.jpg");
+    background-image: url("../Photography/IMG_20240324_142634.jpg");
 }
 
 .card:nth-child(4):before {
-    background-image: url("./Photography/1000079683-01.jpeg");
+    background-image: url("../Photography/1000079683-01.jpeg");
 }
 
 .card:nth-child(5):before {
-    background-image: url("./Photography/IMG_20240324_140613.jpg");
+    background-image: url("../Photography/IMG_20240324_140613.jpg");
 }
 
 .card:nth-child(6):before {
-    background-image: url("./Photography/IMG_20240324_142634.jpg");
+    background-image: url("../Photography/IMG_20240324_142634.jpg");
 }
 
 .content {
