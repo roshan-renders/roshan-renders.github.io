@@ -230,3 +230,24 @@ main {
     transition: 0.825s;
     opacity: 0;
 }
+.time{
+    padding-left: 1rem; /* 16px */
+    padding-right: 1rem; /* 16px */
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(68, 68, 68);
+    font-size:1.5rem;
+    font-weight: 900;
+}
+@media (min-width: 640px){ 
+    .time{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+@media (min-width: 1024px){ 
+    .time{
+        padding-left: 2rem; /* 32px */
+        padding-right: 2rem; /* 32px */
+    }
+}
