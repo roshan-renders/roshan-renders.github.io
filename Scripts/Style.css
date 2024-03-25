@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    user-select: none;
+}
+
+:root {
+    --d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+    --font-sans: "Rubik", sans-serif;
+    --font-serif: "Cardo", serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
 
 #footer {
     background-color: rgb(32, 32, 32);
@@ -26,7 +40,26 @@
 
 .NameLogo {
     font-family: 'Roboto Slab', serif;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 900;
     color: #474747;
+}
+#nav {
+    font-family: var(--font-poppins);
+}
+.date{
+    font-family: var(--font-sans);
+}
+.notfound_container{
+    position: relative;
+    width: 100%;
+    height: 32%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notfound_text{
+    text-align: center;
+    font-weight: 900;
 }
