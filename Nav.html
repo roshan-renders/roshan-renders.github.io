@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Navigation Bar</title>
+    <script
+      src="https://kit.fontawesome.com/a8d6527c18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="mobile-nav.css" />
+    <script src="Nav.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation Starts Here -->
+    <nav>
+      <div class="container">
+        <div class="logo-name">
+          <img src="chess.png" class="logo" />
+          <h1>Roshan Renders</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Chess</a></li>
+          <li><a href="#">Blender</a></li>
+        </ul>
+        <span id="menu-icon" onclick="OpenMenu()"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+        <span id="close-icon" onclick="CloseMenu()"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+      </div>
+    </nav>
+    <div id="menu">
+      <ul class="nav-links-mobile">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Chess</a></li>
+        <li><a href="#">Blender</a></li>
+      </ul>
+    </div>
+    <!-- Navigation Ends Here-->
+    <div class="content-wrapper">
+      <!-- Landing Starts Here -->
+      <div class="landing-image">
+        <div class="left-landing">
+          <div class="landing-text">
+            <h1>
+              Hi,
+              <span class="label">I'm Roshan.</span
+              >
+            </h1>
+            <h2 style="margin: 0">
+              I'm a Web Layout Designer, a Chess Player and a 3D Modeller.
+            </h2>
+          </div>
+          <div class="buttons">
+            <a href="#"><div class="button">Photography</div></a>
+            <a href="#"><div class="button">Chess</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
