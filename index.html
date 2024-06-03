@@ -1,164 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Navigation Bar</title>
+    <script
+      src="https://kit.fontawesome.com/a8d6527c18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="mobile-nav.css" />
+    <script src="Nav.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roshan Renders</title>
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="Scripts/script.js"></script>
-  <link rel="stylesheet" href="Scripts/Style.css">
-  <style>
-    *:hover {
-      transition: 100ms ease-out;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="relative overflow-hidden bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
-        <svg class="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
-          fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <polygon points="50,0 100,0 50,100 0,100" />
-        </svg>
-
-        <div>
-          <div class="relative px-4 pt-6 sm:px-6 lg:px-8">
-            <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-              <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
-                <div class="flex w-full items-center justify-between md:w-auto">
-                  <img class="h-10 w-auto" src="favicon.png">
-                  <div class="block md:hidden NameLogo">Roshan Renders</div>
-                  <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button"
-                      class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                      onclick="w3_open()" aria-expanded="false">
-                      <span class="sr-only">Open main menu</span>
-                      <!-- Heroicon name: outline/bars-3 -->
-                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke-width="3" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
-
-                <a href="" class="font-medium text-indigo-600" style="transition: 100ms;">Home</a>
-
-                <a href="/Photography" class="font-medium text-gray-500 hover:text-gray-700">Photography</a>
-
-                <a href="#" class="font-medium text-gray-500 hover:text-gray-700">Programming</a>
-
-                <a href="/Blender" class="font-medium text-gray-500 hover:text-gray-700">Blender</a>
-                <!-- A collection of the latest things I made from all sub-headings -->
-              </div>
-            </nav>
+  <body>
+    <!-- Navigation Starts Here -->
+    <nav>
+      <div class="container">
+        <div class="logo-name">
+          <img src="chess.png" class="logo" />
+          <h1>Roshan Renders</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Chess</a></li>
+          <li><a href="#">Blender</a></li>
+        </ul>
+        <span id="menu-icon" onclick="OpenMenu()"
+          ><i class="fa-solid fa-bars"></i
+        ></span>
+        <span id="close-icon" onclick="CloseMenu()"
+          ><i class="fa-solid fa-xmark"></i
+        ></span>
+      </div>
+    </nav>
+    <div id="menu">
+      <ul class="nav-links-mobile">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Chess</a></li>
+        <li><a href="#">Blender</a></li>
+      </ul>
+    </div>
+    <!-- Navigation Ends Here-->
+    <div class="content-wrapper">
+      <!-- Landing Starts Here -->
+      <div class="landing-image">
+        <div class="left-landing">
+          <div class="landing-text">
+            <h1>
+              Hi,
+              <span class="label">I'm Roshan.</span
+              >
+            </h1>
+            <h2 style="margin: 0">
+              I'm a Web Layout Designer, a Chess Player and a 3D Modeller.
+            </h2>
           </div>
-
-          <!--
-                Mobile menu, show/hide based on menu open state.
-      
-                Entering: "duration-150 ease-out"
-                  From: "opacity-0 scale-95"
-                  To: "opacity-100 scale-100"
-                Leaving: "duration-100 ease-in"
-                  From: "opacity-100 scale-100"
-                  To: "opacity-0 scale-95"
-              -->
-          <!-- Mobile Nav -->
-          <div id="mobile_nav" class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition hidden" style="width: 100%;">
-            <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
-              <div class="flex items-center justify-between px-5 pt-4">
-                <div>
-                  <img class="h-10 w-auto" src="favicon.png" alt="">
-                </div>
-                <div class="block md:hidden NameLogo">Roshan Renders</div>
-                <div class="-mr-2">
-                  <button type="button"
-                    class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    onclick="w3_close()">
-                    <span class="sr-only">Close main menu</span>
-                    <!-- Heroicon name: outline/x-mark -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      stroke-width="3" stroke="currentColor" aria-hidden="true">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="space-y-1 px-2 pt-2 pb-3">
-                <a href=""
-                  class="block w-full bg-gray-50 px-5 py-3 text-left font-medium text-indigo-600 hover:bg-gray-100">Home</a>
-
-                <a href="#"
-                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Photography</a>
-
-                <a href="#"
-                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Programming</a>
-
-                <a href="/Blender"
-                  class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Blender</a>
-              </div>
-            </div>
+          <div class="buttons">
+            <a href="#"><div class="button">Photography</div></a>
+            <a href="#"><div class="button">Chess</div></a>
           </div>
         </div>
-
-        <main class="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-          <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl md:text-6xl">
-              <span class="block xl:inline">Hi there,</span>
-              <span class="block text-indigo-600 xl:inline" style="white-space: pre-line">I'm Roshan</span>
-            </h1>
-            <p
-              class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.</p>
-            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div class="rounded-md shadow">
-                <a href="#About_Me"
-                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">About
-                  Me</a>
-              </div>
-              <div class="mt-3 sm:mt-0 sm:ml-3">
-                <a href="/Photography"
-                  class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 md:py-4 md:px-10 md:text-lg">Photography</a>
-              </div>
-            </div>
-          </div>
-        </main>
       </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-        alt="" style="z-index: -100">
-    </div>
-  </div>
-  <!-- Block Set -->
-  <div class="p-8 text-center" id="About_Me">
-    <span class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-5xl">Who am I</span>
-  </div>
-  <div style="margin-top: 0;">
-    <div class="px-16">
-      <p class="text-lg text-center">Hi, I'm Naaga Roshan and I'm a web-developer and a 3D modeler.</p>
-      <br>
-      <p class="text-lg text-justify p-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum et
-        deserunt quasi, dolor porro omnis. Quibusdam hic vel, qui laudantium aperiam illum accusamus impedit minima
-        dolores quia nisi dignissimos tempora neque saepe sequi velit? Ullam excepturi, eligendi facere dolores iure
-        illum reprehenderit quis esse, cum optio, quam commodi at.</p>
-    </div>
-  </div>
-  <div id="footer" class="relative mt-6">
-    <div id="credits">Credits</div>
-    <p id="footertext">Made By <span>Naaga Roshan</span>.<br><span>Codepen:</span> @codiecat</p>
-  </div>
-</body>
-
+  </body>
 </html>
