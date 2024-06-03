@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   overflow-x: hidden;
@@ -38,7 +42,7 @@ nav h1 {
 
 .nav-links {
   list-style: none;
-  padding: 0;
+  padding-right: 1vw;
   margin: 0;
 }
 
@@ -83,12 +87,12 @@ nav h1 {
 #menu-icon {
   display: none;
   font-size: 1.3rem;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 #close-icon {
   display: none;
   font-size: 1.3rem;
-  margin-right: 20px;
+  margin-right: 2rem;
 }
 @media screen and (max-width: 700px) {
   .nav-links {
