@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 nav {
+  width: 100%;
   z-index: 10;
   background-color: #2a2a2a;
   /* Darker navbar color */
@@ -20,7 +21,7 @@ nav {
 .container {
   position: relative;
   height: 2.5rem;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -122,7 +123,7 @@ nav h1 {
   width: 60%;
 }
 .left-landing h1 {
-  font-size: 4rem;
+  font-size: 6vw;
   margin: 0;
   margin-bottom: 0.5rem;
 }
@@ -136,7 +137,7 @@ nav h1 {
   text-overflow: ellipsis;
   text-align: justify;
   font-weight: 450;
-  font-size: 1.45rem;
+  font-size: 1.85vw;
 }
 div.button {
   border-radius: 4px;
