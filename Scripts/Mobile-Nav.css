@@ -90,7 +90,6 @@
   }
 }
 
-
 @media screen and (max-width: 580px) {
   .left-landing {
     width: 87.5%;
@@ -106,5 +105,13 @@
 @media screen and (max-width: 500px) {
   .left-landing h1 {
     font-size: 8.5vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .left-landing h1 {
+    font-size: 9vw;
+  }
+  .left-landing h2 {
+    font-size: 3.5vw;
   }
 }
