@@ -35,7 +35,7 @@ nav {
 }
 
 nav h1 {
-  font-family: "Red Hat Text", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   margin-right: auto;
   font-size: 24px;
 }
@@ -149,7 +149,7 @@ div.button {
   margin-top: 0.5rem;
   width: fit-content;
   background: #2a2a2a;
-  padding: 1rem;
+  padding: 1.35vw;
   color: #ebecf5;
 }
 div.buttons {
