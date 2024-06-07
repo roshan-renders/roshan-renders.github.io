@@ -12,8 +12,16 @@
     --font-sans: "Rubik", sans-serif;
     --font-serif: "Cardo", serif;
 }
-
+.content-wrapper{
+    padding-top: 1.5rem;
+}
 main {
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    align-items: center;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1.5vw;
@@ -235,7 +243,7 @@ main {
     padding-right: 1rem; /* 16px */
     position: relative;
     font-family: 'Roboto Slab', serif;
-    color: rgb(68, 68, 68);
+    color: #cdcdcd;
     font-size:1.5rem;
     font-weight: 900;
 }
@@ -243,6 +251,7 @@ main {
     .time{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+        padding-top: 0;
     }
 }
 @media (min-width: 1024px){ 
