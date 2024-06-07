@@ -16,8 +16,8 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1.5vw;
-  grid-row-gap: 1.5vw;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1.25rem;
 }
 
 .card {
@@ -201,7 +201,7 @@ main {
 
 #footer #credits {
   font-size: larger;
-  margin-bottom: 2vw;
+  margin-bottom: 1.5rem;
   font-weight: 900;
 }
 
