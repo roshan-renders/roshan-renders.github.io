@@ -4,6 +4,11 @@
     --font-sans: "Rubik", sans-serif;
     --font-serif: "Cardo", serif;
 }
+
+.content-wrapper{
+    padding-top: 1.5rem;
+}
+
 main {
     position: relative;
     padding-left: 1rem;
