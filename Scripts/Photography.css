@@ -1,32 +1,108 @@
-@import url('Cards.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
-
-*:hover {
-    transition: 100ms ease-out;
-}
-
-.card:nth-child(1):before {
-    background-image: url("../Photography/1000079683-01.jpeg");
-}
-
-.card:nth-child(2):before {
-    background-image: url("../Photography/IMG_20240324_140613.jpg");
-}
-
-.card:nth-child(3):before {
-    background-image: url("../Photography/IMG_20240324_142634.jpg");
-}
-
-.card:nth-child(4):before {
-    background-image: url("../Photography/1000079683-01.jpeg");
-}
-
-.card:nth-child(5):before {
-    background-image: url("../Photography/IMG_20240324_140613.jpg");
-}
-
-.card:nth-child(6):before {
-    background-image: url("../Photography/IMG_20240324_142634.jpg");
-}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photography | Roshan Renders</title>
+        <script src="https://kit.fontawesome.com/a8d6527c18.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="Scripts/Fonts.css">
+        <link rel="stylesheet" href="Scripts/Nav.css">
+        <link rel="stylesheet" href="Scripts/Mobile-Nav.css">
+        <script src="Scripts/Nav.js"></script>
+        <link rel="stylesheet" href="Scripts/Style.css">
+        <link rel="stylesheet" href="Scripts/Photography.css">
+    </head>
+    <body>
+        <!-- Navigation Starts Here -->
+        <nav>
+            <div class="container">
+                <div class="logo-name">
+                    <img src="logo.png" class="logo">
+                    <h1>Roshan Renders</h1>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Photography">Photography</a>
+                    </li>
+                    <li>
+                        <a href="#">Chess</a>
+                    </li>
+                    <li>
+                        <a href="/Blender">Blender</a>
+                    </li>
+                </ul>
+                <span id="menu-icon" onclick="OpenMenu()">
+                    <i class="fa-solid fa-bars">
+                    </i
+        >
+                </span>
+                <span id="close-icon" onclick="CloseMenu()">
+                    <i class="fa-solid fa-xmark">
+                    </i
+        >
+                </span>
+            </div>
+        </nav>
+        <div id="menu">
+            <ul class="nav-links-mobile">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="/Photography">Photography</a>
+                </li>
+                <li>
+                    <a href="#">Chess</a>
+                </li>
+                <li>
+                    <a href="/Blender">Blender</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navigation Ends Here-->
+        <div class="content-wrapper">
+            <!-- Landing Starts Here -->
+            <div class="time">24 • 03 • 2024</div>
+            <main id="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Some Tall Pine-Like Trees</h2>
+                        <p class="copy">Entrance to the Vadavalli Botanical Garden</p>
+                        <div class="date">24 • 03 • 2024</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Small Beautiful Sapling</h2>
+                        <p class="copy">Vadavalli Botanical Garden</p>
+                        <div class="date">24 • 03 • 2024</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Small Cape Holly Tree</h2>
+                        <p class="copy">Vadavalli Botanical Garden</p>
+                        <div class="date">24 • 03 • 2024</div>
+                    </div>
+                </main>
+                <div id="footer">
+                    <div id="credits">Credits</div>
+                    <p id="footertext">
+                        Made By
+                        <span>Naaga Roshan.</span>
+                        <br>
+                        <span>Codepen:</span>
+                        @codiecat
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Background image by Christian Lue on unsplash.com-->
+</html>
