@@ -196,16 +196,16 @@ main {
   background-color: rgb(32, 32, 32);
   color: azure;
   font-family: "Roboto Slab", serif;
-  padding: 3vw;
+  padding: 2.5rem;
 }
 
-#footer > #credits {
+#footer #credits {
   font-size: larger;
   margin-bottom: 2vw;
   font-weight: 900;
 }
 
-#footer > #footertext {
+#footer #footertext {
   color: #a0a0a0;
   font-weight: 500;
 }
