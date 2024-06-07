@@ -5,10 +5,6 @@
     --font-serif: "Cardo", serif;
 }
 
-.content-wrapper{
-    padding-top: 1.5rem;
-}
-
 main {
     position: relative;
     padding-left: 1rem;
@@ -211,10 +207,11 @@ main {
 .time{
     padding-left: 1rem; /* 16px */
     padding-right: 1rem; /* 16px */
+    margin-top: 1.5rem;
     position: relative;
     font-family: 'Roboto Slab', serif;
     color: #cdcdcd;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 @media (min-width: 640px){ 
