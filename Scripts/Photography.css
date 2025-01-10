@@ -29,3 +29,8 @@
 .card:nth-child(6):before {
     background-image: url("../Photography/IMG_20240324_142634.jpg");
 }
+
+.time {
+    font-family: "Roboto Slab", serif !important;
+    font-weight: 400 !important;
+}
