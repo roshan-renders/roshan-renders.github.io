@@ -1,6 +1,5 @@
 @import url('Cards.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 
 *:hover {
